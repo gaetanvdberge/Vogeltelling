@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Vogeltelling.Web.Models.Bird>
+
+@{
+    ViewData["Title"] = "Teller";
+}
+
+
+
+<main>
+    <h2>Vogel teller</h2>
+    <p>
+        Bedankt dat u ons helpt met het tellen van vogels. <br />
+        Per soort noteer je het aantal verschillende vogels dat je tijdens jouw telling zag.<br />
+        Dit doe je door over de vogel te hoveren en op de plus te klikken.
+    </p>
+
+    @if (ViewContext.HttpContext.User.IsInRole("Administrator"))
+    {
+        @Html.ActionLink("Create", "Create")
+    }
+
+    <div class="Vogels">
+        @foreach (var item in Model)
+        {
+
+
+            @* URL ACTION: EERSTE: HTML PAGINA     TWEEDE: MAP WAAR PAGINA IN STAAT*@
+            <div class="Vogels__vogelTeller">
+
+                <figure>
+                    <img src=" @Html.DisplayFor(modelItem => item.PhotoUrl)" alt="@Html.DisplayFor(modelItem => item.Name)">
+                    <figcaption>
+                        <p>@Html.DisplayFor(modelItem => item.Name)</p>
+                        <p><a href="@Url.Action("UpCount", "Teller", new { BirdID = item.BirdId })"><label class="toggle">+</label></a></p>
+                    </figcaption>
+                </figure>
+            </div>
+
+        }
+    </div>
+</main>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Vogeltelling.Web.Models.Bird>
+
+@*@section AddToHead{
+    <link href="@Url.Content("~/css/StyleSheet.css")" rel="stylesheet" type="text/css" />
+}*@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <h2>All Birds</h2>
+
+    @if (ViewContext.HttpContext.User.IsInRole("Administrator"))
+    {
+        @Html.ActionLink("Create", "Create")
+    }
+
+    <div class="Vogels">
+        @foreach (var item in Model)
+        {
+
+
+            @* URL ACTION: EERSTE: HTML PAGINA     TWEEDE: MAP WAAR PAGINA IN STAAT*@
+            <div class="Vogels__vogel">
+                <a href="@Url.Action("Details", "Bird", new { id = item.BirdId })">
+                    <figure>
+                        <img src=" @Html.DisplayFor(modelItem => item.PhotoUrl)" alt="@Html.DisplayFor(modelItem => item.Name)">
+                        <figcaption>@Html.DisplayFor(modelItem => item.Name)</figcaption>
+                    </figure>
+                </a>
+            </div>
+
+        }
+    </div>
+</main>

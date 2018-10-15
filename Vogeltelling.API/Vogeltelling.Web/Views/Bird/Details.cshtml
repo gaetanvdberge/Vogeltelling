@@ -1,0 +1,31 @@
+﻿@model Vogeltelling.Web.Models.Bird
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+
+<main>
+    <div class="Detail">
+        <hr />
+
+        <img src="@Html.DisplayFor(model => model.PhotoUrl)" alt="@Html.DisplayFor(model => model.Name)" />
+        <p> @Html.DisplayFor(model => model.Description)</p>
+
+
+
+    </div>
+    <div>
+        @* ACTIONLINK: EERSTE: Woord    TWEEDE: ActionName *@
+        @if (ViewContext.HttpContext.User.IsInRole("Administrator"))
+    {
+        @Html.ActionLink("Edit", "Edit", new { id = Model.BirdId });
+    <scheiding>|</scheiding>
+    @Html.ActionLink("Delete", "Delete", new { id = Model.BirdId })
+    <scheiding>|</scheiding>
+}
+
+        <a asp-action="Index">Back to List</a>
+    </div>
+</main>

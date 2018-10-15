@@ -1,0 +1,184 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+body {
+    margin: 10px;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #cfcfcf;
+    margin-bottom: 10px;
+}
+
+#main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Vogels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Vogels__vogel {
+    width: 30%;
+    margin: 10px;
+    height: 250px;
+    min-width: 250px;
+}
+
+.Vogels__vogel figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+.Vogels__vogel figure:hover {
+        box-shadow: 2px 2px 3px 2px gray;
+    }
+
+.Vogels__vogel figure:hover img {
+        transform: scale(1.25);
+    }
+
+.Vogels__vogel figure figcaption {
+        position: relative;
+        top: -29px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        padding: 5px;
+        color: white;
+    }
+
+.Vogels__vogel figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+    }
+
+
+
+
+
+
+
+
+.Vogels__vogelTeller {
+    width: 30%;
+    margin: 10px;
+    height: 250px;
+    min-width: 250px;
+}
+
+.Vogels__vogelTeller figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Vogels__vogelTeller figure:hover {
+    box-shadow: 2px 2px 3px 2px gray;
+}
+
+    .Vogels__vogelTeller figure:hover figcaption {
+        top: -80px;
+        height: 80px;
+    }
+
+    .Vogels__vogelTeller figure figcaption {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: -29px;
+        padding: 5px;
+        color: white;
+        text-align: center;
+    }
+
+.Vogels__vogelTeller figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+.Detail img {
+    width: 30%;
+    min-width: 250px;
+    height: 250px;
+}
+
+.Detail p{
+    margin-top: 15px;
+}
+
+.moment, .moment:link, .moment:visited, .moment:active, .moment:hover {
+    border: 1px solid #333333;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #D1DEE2;
+    color: black;
+}
+
+.moment:hover {
+        background-color: #BACED4;
+    }
+
+
+
+
+
+
+.min {
+    text-align: start;
+}
+
+.plus {
+    text-align: end;
+}
+
+.toggle {
+    margin: 5px;
+    width: 25%;
+    font-size: 2em;
+}
+
+.toggle:hover{
+    color: slategray;
+}
+
+.count {
+    text-align: center;
+    margin: 5px;
+    width: 25%;
+    font-size: 2em;
+}

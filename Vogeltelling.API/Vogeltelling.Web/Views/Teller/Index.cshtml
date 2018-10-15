@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Vogeltelling.Web.Models.Moments>
+
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Bezig:</h2>
+
+@foreach (var item in Model)
+{
+    if (item.Start <= DateTime.Now && item.Stop >= DateTime.Now)
+    {
+        <a href="@Url.Action("Provincies", "Teller", new { id = item.MomentId })">
+            <div class="moment active">
+                <h1> @item.Start.ToString("dddd dd MMMM yyyy") </h1>
+                <h4> @item.Start.ToString("HH:mm") - @item.Stop.ToString("HH:mm") </h4>
+                <h5> Klik hier om deel te nemen.</h5>
+            </div>
+            </a>
+    }
+            }
+
+            <h2>Binnekort:</h2>
+            @foreach (var item in Model)
+            {
+                if (item.Start > DateTime.Now && item.Stop > DateTime.Now)
+                {
+                    <div class="moment soon">
+                        <h1> @item.Start.ToString("dddd dd MMMM yyyy") </h1>
+                        <h4> @item.Start.ToString("HH:mm") - @item.Stop.ToString("HH:mm") </h4>
+                    </div>
+                }
+            }
+
+            <h2>Verleden:</h2>
+            @foreach (var item in Model)
+            {
+                if (item.Start < DateTime.Now && item.Stop < DateTime.Now)
+                {
+                    <div class="moment past">
+                        <h1> @item.Start.ToString("dddd dd MMMM yyyy") </h1>
+                        <h4> @item.Start.ToString("HH:mm") - @item.Stop.ToString("HH:mm") </h4>
+                    </div>
+                }
+            }

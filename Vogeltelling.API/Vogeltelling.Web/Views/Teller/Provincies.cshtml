@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Vogeltelling.Web.Models.Provincie>
+
+@{
+    ViewData["Title"] = "Provincies";
+}
+
+<h2>Provincies</h2>
+
+<h4>Kies De Provincie waar u gaat tellen.</h4>
+
+<form asp-action="Provincies">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        @foreach (var item in Model)
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(modelItem => item.RegionId)
+
+
+        <p>@Html.RadioButtonFor(modelItem => item.RegionName, item.RegionId, new { @checked = "checked" }) @item.RegionName</p>
+
+}
+
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Begin met tellen" class="btn btn-default"/>
+    </div>
+</form>
+
+

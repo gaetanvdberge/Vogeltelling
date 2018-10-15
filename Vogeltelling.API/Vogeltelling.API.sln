@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vogeltelling.API", "Vogeltelling.API\Vogeltelling.API.csproj", "{BFC296FD-11B2-4620-BAB2-CF5E4A133FD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vogeltelling.Models", "Vogeltelling.Models\Vogeltelling.Models.csproj", "{A633C9B7-C713-434E-BE3D-E566FFFEDEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vogeltelling.Repositories", "Vogeltelling.Repositories\Vogeltelling.Repositories.csproj", "{8A1D56CE-6D7F-4857-8AB0-E7BDE4175BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vogeltelling.Services", "Vogeltelling.Services\Vogeltelling.Services.csproj", "{70D64944-927B-47F6-A0EA-913EDF8E4154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vogeltelling.Tests", "Vogeltelling.Tests\Vogeltelling.Tests.csproj", "{224D86FD-A8B9-4306-B351-FB82B6C6C95C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vogeltelling.Web", "Vogeltelling.Web\Vogeltelling.Web.csproj", "{9EA80459-B090-41E1-AD1F-CA15D06E4ECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC296FD-11B2-4620-BAB2-CF5E4A133FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC296FD-11B2-4620-BAB2-CF5E4A133FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC296FD-11B2-4620-BAB2-CF5E4A133FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC296FD-11B2-4620-BAB2-CF5E4A133FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A633C9B7-C713-434E-BE3D-E566FFFEDEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A633C9B7-C713-434E-BE3D-E566FFFEDEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A633C9B7-C713-434E-BE3D-E566FFFEDEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A633C9B7-C713-434E-BE3D-E566FFFEDEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1D56CE-6D7F-4857-8AB0-E7BDE4175BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1D56CE-6D7F-4857-8AB0-E7BDE4175BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1D56CE-6D7F-4857-8AB0-E7BDE4175BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1D56CE-6D7F-4857-8AB0-E7BDE4175BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D64944-927B-47F6-A0EA-913EDF8E4154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D64944-927B-47F6-A0EA-913EDF8E4154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D64944-927B-47F6-A0EA-913EDF8E4154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D64944-927B-47F6-A0EA-913EDF8E4154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224D86FD-A8B9-4306-B351-FB82B6C6C95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224D86FD-A8B9-4306-B351-FB82B6C6C95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224D86FD-A8B9-4306-B351-FB82B6C6C95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224D86FD-A8B9-4306-B351-FB82B6C6C95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA80459-B090-41E1-AD1F-CA15D06E4ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA80459-B090-41E1-AD1F-CA15D06E4ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA80459-B090-41E1-AD1F-CA15D06E4ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA80459-B090-41E1-AD1F-CA15D06E4ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {139FA4F2-6AF6-4F5D-92BE-7011C7FCE305}
+	EndGlobalSection
+EndGlobal
